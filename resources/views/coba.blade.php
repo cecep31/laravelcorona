@@ -7,11 +7,8 @@
     <title>berada di beta</title>
 </head>
 <body>
-    {{
-    for ($i=0; $i < 5 ; $i++) {
-        echo "belajar dulu";
-    }
-    }}
+<h1>welcom</h1>
+<p>sadasdasdajhsdvjashdajdjhavdjahsvjdashjdsdjashdjvjh</p>
 
 </body>
 </html>
