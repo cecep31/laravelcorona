@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title','home')
+@section('title','about')
 @section('content')
-    selamat datang
+    about
 @endsection
