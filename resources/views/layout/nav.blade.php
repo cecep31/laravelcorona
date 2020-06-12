@@ -5,17 +5,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item{{ request()->is('/') ? ' active':'' }}">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item{{ request()->is('about') ? ' active':'' }}">
           <a class="nav-link" href="/about">about</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <li class="nav-item{{ request()->is('/admin') ? ' active':'' }}">
+          <a class="nav-link" href="/admin">admin</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item{{ request()->is('/') ? ' active':'' }}">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>
