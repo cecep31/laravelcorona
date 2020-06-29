@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title','home')
+@section('title','Home | pilput website personal')
 @section('content')
 
 
