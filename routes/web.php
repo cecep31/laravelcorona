@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'welcomecontroller@index');
+
 Route::get('/admin', function () {
     return view('admin.dashboard');
 });
 Route::view('/about', 'saya');
+
+Route::get('/donate', 'donatecontroller@index');
 
